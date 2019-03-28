@@ -5,9 +5,6 @@ module Lib where
 import Database.Redis.IO
 import System.Logger
 
-someFunc :: IO ()
-someFunc = putStrLn "someFunc"
-
 add :: Key -> Field -> Redis IO Bool
 add k f = set k f nx
 
